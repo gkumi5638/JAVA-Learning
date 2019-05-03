@@ -5,11 +5,10 @@ public class Main {
 
 	//ここからMainメソッド
 	public static void main(String[] args){
-		System.out.println("hello,world");
-		System.out.println(31 + 31);
-		int x;
-		x = 6;
-		System.out.println(x * x * 3.14);
+		int age = 20;       			//変数ageを20で初期化
+		System.out.println("私の年齢は" + age);
+		age = 31;				//変数ageに値を再代入
+		System.out.println("年齢を" + age + "へ変更しました。"); 
 	}
 }
 
