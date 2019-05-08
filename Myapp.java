@@ -1,24 +1,17 @@
 public class Myapp{ 
-
-	public static void main(String[] args){
-	  // 文字
-	  char a = 'a';
-
-	  // 整数 byte short int long
-	  int x = 10;
-	  long y = 5555555555L;
-
-	  // 浮動小数点数 float double	  
-	  double d = 23423.344;
-	  float f = 32.33F;
-
-	  // 論理値
-	  boolean flag = true; //false
-
-	  // 文字列
-	  // \n 改行
-	  // \t	タブ
-	  String msg = "Hello Wo\nrld again\t!";
-	  System.out.println(msg);
-	}	
+	public static void main (String[] args){
+		System.out.print("【数当てゲーム】");
+		int ans = new java.util.Random().nextInt(10);
+		for(int i = 0; i < 5; i++){
+		  System.out.println("0〜9の数字を入力してください");
+		  int num = new java.util.Scanner(System.in).nextInt();
+		  if (ans == num){
+			System.out.println("アタリ!");	
+			break;
+		  } else {
+		    System.out.print("違います");
+		}	
+		}	
+		System.out.print("ゲームを終了します");
+	}
 }
